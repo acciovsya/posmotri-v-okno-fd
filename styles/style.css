@@ -84,7 +84,7 @@ ol {
 
 .search-form {
   display: flex;
-  align-items: start;
+  align-items: end;
   justify-content: space-between;
 }
 
@@ -100,16 +100,20 @@ ol {
   align-items: center;
   gap: 5px;
   width: fit-content;
+  cursor: pointer;
 }
 
 .search-form__textfield {
+  font-size: inherit;
+  font-family: inherit;
   appearance: none;
   background-color: transparent;
   border: none;
+  width: 225px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: #fff;
-  padding: 2.5px 14px 2.5px 0;
+  padding: 2.5px 0;
 }
 
 .search-form__textfield::placeholder {
@@ -123,10 +127,6 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-}
-
-input:focus {
-  outline: none;
 }
 
 /* фоллбек для фокуса текстового поля
@@ -170,6 +170,42 @@ input:focus {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding-block: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+}
+
+.more-button {
+  width: 100%;
 }
 
 .content__details {
