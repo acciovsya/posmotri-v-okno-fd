@@ -221,6 +221,7 @@ ol {
   gap: 30px;
   max-height: 298px;
   overflow-y: auto;
+  padding: 1px 3px 3px;
 }
 
 .content__list {
@@ -232,6 +233,32 @@ ol {
 .content__video-card {
   display: flex;
   align-items: start;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card-description-container {
@@ -261,11 +288,6 @@ ol {
   color: #545050;
 }
 
-.content__card-link {
-  text-decoration: none;
-  color: #fff;
-}
-
 .content__video-card-title {
   font-family: Oswald, sans-serif;
   font-size: 30px;
@@ -282,7 +304,6 @@ ol {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  font-size: 18px;
   line-height: 16.2px;
   overflow: hidden;
 }
