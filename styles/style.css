@@ -231,7 +231,10 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-height: 298px;
+  min-width: 399px;
+  /* был почему-то уверен, что заголовок 
+  наоборот должен прижиматься к нижнему краю */
+  height: 298px;
   padding: 1px 3px 3px;
   overflow-y: auto;
 }
